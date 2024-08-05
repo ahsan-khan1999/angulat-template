@@ -1,5 +1,8 @@
 <h2>Products</h2>
-<div *ngFor="let item of products">{{ item.name }}</div>
+<div *ngIf="products.length === 0">Product has {{products.length}} items</div>
+<!-- <div *ngIf="products.length > 0"> -->
+    <div *ngFor="let item of products">{{ item.name }}</div>
+<!-- </div> -->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
